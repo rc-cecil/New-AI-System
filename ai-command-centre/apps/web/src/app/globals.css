@@ -90,6 +90,40 @@ button {
   background: var(--surface-raised);
 }
 
+.context-select {
+  position: relative;
+  height: 40px;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 0 10px 0 12px;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.context-select:hover,
+.context-select:focus-within {
+  border-color: var(--border-strong);
+  background: var(--surface-raised);
+}
+
+.context-select select {
+  min-width: 132px;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--foreground);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.context-select option {
+  background: var(--surface);
+  color: var(--foreground);
+}
+
 .provider-pill {
   display: inline-flex;
   height: 28px;
