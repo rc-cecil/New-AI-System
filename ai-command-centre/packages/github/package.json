@@ -1,0 +1,10 @@
+{
+  "name": "@ai-command-centre/github",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts", "./core": "./src/core.ts", "./mock": "./src/mock.ts" },
+  "scripts": { "typecheck": "tsc --noEmit", "test": "vitest run" },
+  "dependencies": { "server-only": "^0.0.1" },
+  "devDependencies": { "@types/node": "^26.4.0", "typescript": "^6.0.3", "vitest": "^4.1.11" }
+}

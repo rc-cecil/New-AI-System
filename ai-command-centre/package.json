@@ -10,8 +10,8 @@
     "dev": "npm run dev --workspace @ai-command-centre/web",
     "build": "npm run build --workspace @ai-command-centre/web",
     "lint": "npm run lint --workspace @ai-command-centre/web",
-    "typecheck": "npm run typecheck --workspace @ai-command-centre/web",
-    "test": "npm run test --workspace @ai-command-centre/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
     "test:e2e": "npm run test:e2e --workspace @ai-command-centre/web"
   },
   "engines": {

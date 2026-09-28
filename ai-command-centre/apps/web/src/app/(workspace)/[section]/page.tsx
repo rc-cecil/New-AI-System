@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 
 import { FoundationDashboard } from "@/components/dashboard/foundation-dashboard";
+import { IntegrationsPage } from "@/components/integrations/integrations-page";
 import { SectionPage, type SectionDefinition } from "@/components/navigation/section-page";
+import { RepositoriesPage } from "@/components/repositories/repositories-page";
 
 const sections = {
   workspaces: {
@@ -75,6 +77,14 @@ export default async function WorkspaceSectionPage({ params }: { params: Promise
 
   if (section === "dashboard") {
     return <FoundationDashboard />;
+  }
+
+  if (section === "integrations") {
+    return <IntegrationsPage />;
+  }
+
+  if (section === "repositories") {
+    return <RepositoriesPage />;
   }
 
   const definition = sections[section as keyof typeof sections];
